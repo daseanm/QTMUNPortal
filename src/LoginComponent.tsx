@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 // Copyright © 2024 Sean Ma. All Rights Reserved.
 
 const LoginComponent = () => {
@@ -28,12 +27,17 @@ const LoginComponent = () => {
       setIsSubmitting(true);
       console.log('Login attempt with:', email, 'and password');
 
+      // Add fade-out animation to the login form
+      const formElement = e.target as HTMLFormElement;
+      formElement.classList.add('animate-fadeOut');
+
+      // Simulate login process and redirect to dashboard
       setTimeout(() => {
-        alert('Login functionality would be implemented here.');
         setIsSubmitting(false);
-      }, 1000);
+        navigate('/StudentDashboard');
+      }, 300); // Match this with the animation duration
     }
-  }, [email, password, isSubmitting]);
+  }, [email, password, isSubmitting, navigate]);
 
   useEffect(() => {
     setIsSubmitting(false);
@@ -88,7 +92,7 @@ const LoginComponent = () => {
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none transition-colors duration-300 bg-transparent px-3 py-2 text-2xl" // Updated class
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none transition-colors duration-300 bg-transparent px-3 py-2 text-2xl"
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
               {showPassword ? '🙈' : '🐵'}

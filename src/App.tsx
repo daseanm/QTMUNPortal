@@ -4,6 +4,8 @@ import LoginComponent from "./LoginComponent";
 import RegistrationTypeSelection from "./RegistrationTypeSelection";
 import SchoolRegistrationInfo from "./SchoolRegistrationInfo";
 import SimpleIndividualRegistrationForm from "./SimpleIndividualRegistrationForm";
+import StudentDashboard from './StudentDashboard';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
         <Route path="/register" element={<RegistrationTypeSelection />} />
         <Route path="/school-registration" element={<SchoolRegistrationInfo />} />
         <Route path="/individual-registration" element={<SimpleIndividualRegistrationForm />} />
+        <Route path="/StudentDashboard" element={<StudentDashboard />} />
       </Routes>
     </Router>
   );
