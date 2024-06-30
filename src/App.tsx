@@ -5,7 +5,7 @@ import RegistrationTypeSelection from "./RegistrationTypeSelection";
 import SchoolRegistrationInfo from "./SchoolRegistrationInfo";
 import SimpleIndividualRegistrationForm from "./SimpleIndividualRegistrationForm";
 import StudentDashboard from './StudentDashboard';
-
+import NotFoundPage from './NotFoundPage';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/school-registration" element={<SchoolRegistrationInfo />} />
         <Route path="/individual-registration" element={<SimpleIndividualRegistrationForm />} />
         <Route path="/StudentDashboard" element={<StudentDashboard />} />
+        <Route path="/NotFoundPage" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
