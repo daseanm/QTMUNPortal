@@ -95,7 +95,7 @@ const LoginComponent = () => {
               className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none transition-colors duration-300 bg-transparent px-3 py-2 text-2xl"
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
-              {showPassword ? '🙈' : '🐵'}
+              {showPassword ? '🙈' : '🙉'}
             </button>
           </div>
         </div>
