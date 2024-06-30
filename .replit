@@ -18,3 +18,10 @@ publicDir = "dist"
 localPort = 5173
 externalPort = 80
 exposeLocalhost = true
+
+[objectStorage]
+defaultBucketID = "replit-objstore-53a1d6e9-6a41-4161-b979-e724520fcb06"
+
+[auth]
+pageEnabled = false
+buttonEnabled = true

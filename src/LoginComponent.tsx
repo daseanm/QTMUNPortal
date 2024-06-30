@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 // Copyright © 2024 Sean Ma. All Rights Reserved.
 
 const LoginComponent = () => {
@@ -87,10 +88,10 @@ const LoginComponent = () => {
             <button
               type="button"
               onClick={togglePasswordVisibility}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none transition-colors duration-300 bg-transparent px-2 py-1"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white focus:outline-none transition-colors duration-300 bg-transparent px-3 py-2 text-2xl" // Updated class
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
-              {showPassword ? 'Hide' : 'Show'}
+              {showPassword ? '🙈' : '🐵'}
             </button>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const SchoolRegistrationInfo = () => {
-  const navigate = useNavigate(); // Create navigate variable
+  const navigate = useNavigate();
 
   const handleDownload = () => {
     // This is a placeholder function. In a real application, this would trigger the form download.
@@ -10,8 +10,8 @@ const SchoolRegistrationInfo = () => {
   };
 
   const handleUnderstand = () => {
-    console.log('User understood the instructions');
-    navigate('/'); // Redirect to LoginComponent
+    // Redirect to the login page
+    navigate('/');
   };
 
   return (

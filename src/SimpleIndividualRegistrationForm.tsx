@@ -46,7 +46,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
@@ -59,7 +59,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.age}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
@@ -72,7 +72,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.grade}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
@@ -85,7 +85,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.affiliatedSchool}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
@@ -97,7 +97,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.firstChoiceCommittee}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           >
             <option value="">Select Committee</option>
             {committees.map(committee => (
@@ -114,7 +114,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.firstChoiceDelegation}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           >
             <option value="">Select Delegation</option>
             {delegations.map(delegation => (
@@ -131,7 +131,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.secondChoiceCommittee}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           >
             <option value="">Select Committee</option>
             {committees.map(committee => (
@@ -148,7 +148,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.secondChoiceDelegation}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           >
             <option value="">Select Delegation</option>
             {delegations.map(delegation => (
@@ -166,7 +166,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.idInformation}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
@@ -179,7 +179,7 @@ const SimpleIndividualRegistrationForm = () => {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 bg-white bg-opacity-10 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
+            required // Make it mandatory
           />
         </div>
 
