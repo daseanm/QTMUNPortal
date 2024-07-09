@@ -31,11 +31,20 @@ const LoginComponent = () => {
       const formElement = e.target as HTMLFormElement;
       formElement.classList.add('animate-fadeOut');
 
-      // Simulate login process and redirect to dashboard
+      // Simple authentication logic
       setTimeout(() => {
         setIsSubmitting(false);
-        navigate('/StudentDashboard');
-      }, 300); // Match this with the animation duration
+        localStorage.setItem('userToken', 'dummyToken');
+        if (email.toLowerCase() === 'admin@admin.com') {
+          localStorage.setItem('isAdmin', 'true');
+        } else if (email.toLowerCase() === 'p@p.com') {
+          localStorage.setItem('isPresident', 'true');
+        } else {
+          localStorage.removeItem('isAdmin');
+          localStorage.removeItem('isPresident');
+        }
+        navigate('/dashboard');
+      }, 300);
     }
   }, [email, password, isSubmitting, navigate]);
 
